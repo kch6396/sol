@@ -101,15 +101,88 @@ header .main__nav .nav .nav__name .solutions-nav li{
 header .main__nav .nav .nav__name .solutions-nav li:first-child {
   border-bottom:none;
 }
+header .main__nav .nav .nav__name .solutions-nav li a::after{
+  content:"";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(69, 48, 138);
+  transition: all .6s;
+}
+header .main__nav .nav .nav__name .solutions-nav li a::before{
+  content:"";
+  position: absolute;
+  right: 50%;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: rgb(69, 48, 138);
+  transition: all .6s;
+}
+header .main__nav .nav .nav__name .solutions-nav li a:hover::after{
+  width:50%;
+}
+header .main__nav .nav .nav__name .solutions-nav li a:hover:before{
+  width:50%;
+}
+#underline .solution::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -4px;
+  background: rgb(69, 48, 138);
+  transition: all .6s;
+  left:0;
+}
 
+#underline a:hover{
+  color:rgba(33,33,33,0.7);
+}
+header .main__nav .nav .nav__name a{
+  position: relative;
+}
+header .main__nav .nav .nav__name a::after{
+  content:"";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 4px;
+  background-color: rgb(69, 48, 138);
+  transition: all .6s;
+  /* border-radius: 0 10px 10px 0; */
+  
+}
+header .main__nav .nav .nav__name a::before{
+  content:"";
+  position: absolute;
+  right: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 4px;
+  background-color: rgb(69, 48, 138);
+  transition: all .6s;
+  /* border-radius: 10px 0 0 10px; */
+}
+header .main__nav .nav .nav__name a:hover::after{
+  width:50%;
+}
+header .main__nav .nav .nav__name a:hover::before{
+  width:50%;
+}
 header .main__nav .nav .nav__name a:hover{
   color:rgba(33,33,33,0.7);
 }
 header .main__nav .nav .nav__name .solution{
   color:rgb(69, 48, 138);
-  text-decoration: underline;
-  text-underline-position: under;
 }
+
+
+
 
 .middle{
   position: relative;
