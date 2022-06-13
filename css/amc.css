@@ -122,6 +122,7 @@ header .main__nav .nav .nav__name .solutions-nav li a:hover::after{
 header .main__nav .nav .nav__name .solutions-nav li a:hover:before{
   width:50%;
 }
+
 #underline .solution::after{
   content: '';
   display: block;
