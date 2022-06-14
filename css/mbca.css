@@ -185,56 +185,11 @@ header .main__nav .nav .nav__name .solution{
 
 .nav__button{
   position:absolute;
-  right:50px;
+  right: 350px;
+  
   font-size: 24px;
   display: none;
   top:30px;
-}
-@media screen and (max-width:768px){
-  
-  header .nav{
-    display:none;
-    flex-direction: column;
-    position:absolute;
-    left:0;
-    text-align: center;
-    background-color: white;
-    width:100%;
-    
-    height:700px;
-    top:-20px;
-    border:4px solid rgb(69, 48, 138);
-  }
-  .solutions-nav{
-    display:none;
-  }
-  
-  .nav a{
-    font-size:40px;
-    top:20px;
-  }
-  div .main__nav{
-    width:100%;
-    height: 300px;
-    position:absolute;
-    left:0;
-    right:0;
-    margin:0 auto;
-    top:130px;
-    /* opacity: 0; */
-  }
-  .nav{
-    position:absolute;
-    left:0;
-    right:0;
-    margin:0 auto;
-  }
-  .nav__button{
-    display:block;
-  }
-  header .nav.active{
-    display:flex;
-  }
 }
 
 
@@ -273,6 +228,9 @@ header .main__nav .nav .nav__name .solution{
   position:absolute;
   right:100px;
   top:80px;
+  width:490px;
+  height:275px;
+  
 }
 /* .visual .fade-in{
   opacity:0;
@@ -645,4 +603,68 @@ footer div .a{
   width:100%;
   height:300px;
   background-color: #ccc;
+}
+
+@media screen and (max-width:768px){
+  .visual .inner{
+    width:100%;
+    
+    
+  }
+  .visual .fade-in .video iframe{
+    width:410px;
+    height:250px;
+    right:10px;
+    
+  }
+  iframe{
+    position: relative;
+  
+
+    
+  }
+
+  header .nav{
+    display:none;
+    flex-direction: column;
+    position:absolute;
+    left:0;
+    text-align: center;
+    background-color: white;
+    /* width:100; */
+    
+    height:700px;
+    top:-20px;
+    border:4px solid rgb(69, 48, 138);
+  }
+  .solutions-nav{
+    display:none;
+  }
+  
+  .nav a{
+    font-size:40px;
+    top:20px;
+  }
+  div .main__nav{
+    width:100%;
+    height: 300px;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    top:130px;
+    /* opacity: 0; */
+  }
+  .nav{
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+  }
+  .nav__button{
+    display:block;
+  }
+  header .nav.active{
+    display:flex;
+  }
 }
