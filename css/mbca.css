@@ -186,7 +186,7 @@ header .main__nav .nav .nav__name .solution{
 
 .nav__button{
   position:absolute;
-  right: 0px;
+  right: 15px;
   
   font-size: 24px;
   display: none;
@@ -621,11 +621,11 @@ footer div .a{
   }
   .middle .visual .inner{
     width:100%;
-    height:650px;
+    height:600px;
     
   }
   .middle .bg img{
-    height:650px;
+    height:600px;
   }
   .visual .fade-in .video iframe{
     width:350px;
@@ -635,12 +635,14 @@ footer div .a{
     position:absolute;
     left:0;
     margin:0 auto;
+    
   }
   .visual .fade-in h2{
     position:absolute;
     left:0;
     right:0;
     margin: 0 auto;
+    
   }
   .choice .inner{
     width:100%;
@@ -654,7 +656,7 @@ footer div .a{
   }
 
   header .nav{
-    display:none;
+    /* display:none; */
     flex-direction: column;
     position:absolute;
     left:0;
@@ -664,8 +666,15 @@ footer div .a{
     width:100%;
     height:400px;
     top:-20px;
-    border:4px solid rgb(69, 48, 138);
+    border-bottom:4px solid rgb(69, 48, 138);
+    
   }
+  /* .main__nav{
+    display:none;
+  } */
+  /* header .nav.click{
+    display:block;
+  } */
   .solutions-nav{
     display:none;
   }
@@ -679,10 +688,11 @@ footer div .a{
     height: 270px;
     position:absolute;
     left:0;
-    right:0;
+    right:-70px;
     margin:0 auto;
     top:130px;
     /* opacity: 0; */
+    display:none;
   }
   .nav{
     position:absolute;
@@ -693,7 +703,11 @@ footer div .a{
   .nav__button{
     display:block;
   }
-  header .nav.active{
+  /* header .nav.active{
+    display:flex;
+    
+  } */
+  div .main__nav.active{
     display:flex;
   }
 }
