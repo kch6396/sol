@@ -186,7 +186,7 @@ header .main__nav .nav .nav__name .solution{
 
 .nav__button{
   position:absolute;
-  left: 300px;
+  right: 0px;
   
   font-size: 24px;
   display: none;
@@ -611,7 +611,10 @@ footer div .a{
 
 @media screen and (max-width:700px){
   body{
-    width:300px;
+    width:100%;
+  }
+  header .inner{
+    width:100%;
   }
   .middle .visual .inner{
     width:100%;
@@ -628,12 +631,15 @@ footer div .a{
     top:350px;
     position:relative;
   }
+  .choice .inner{
+    width:100%;
+  }
   .select{
-    width:400px;
+    width:100%;
     margin:0 0;
   }
   .middle{
-    width:400px;
+    width:100%;
   }
 
   header .nav{
