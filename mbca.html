@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="./css/mbca.css" />
 
-  <script defer src="./js/main.js"></script>
+  <script src="./js/main.js" defer></script>
 </head>
 <body style="overflow-x: hidden"> 
   
@@ -23,9 +23,10 @@
         <img src="./images/FBOENAME.png" alt="FBOE" />
       </a>
       
+      
       <div class="main__nav">
         
-        <ul class="nav">
+        <div class="nav">
           <div class="nav__name"><a href="javascript:void(0)">Home</a></div>
           <div class="nav__name" id="underline"><a class="solution" href="javascript:void(0)">Solutions</a>
             <ul class="solutions-nav">
@@ -35,9 +36,16 @@
           </div>
           <div class="nav__name"><a href="javascript:void(0)">About us</a></div>
           <div class="nav__name"><a href="./contact.html">Contact us</a></div>
-        </ul>
-        
+        </div>
+        <!-- <a href="" class="nav__button">
+          <i class="fa-solid fa-bars"></i>
+        </a> -->
       </div>
+      <a href="javascript:void(0)" class="nav__button">
+        <!-- <span class="material-icons-outlined"> -->
+          <img src="./images/bar.png" alt="IMAGE1">
+          <!-- </span> -->
+      </a>
     </div>
   </header>
   <div class="middle">

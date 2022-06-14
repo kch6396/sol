@@ -249,10 +249,11 @@ textarea {
 textarea:focus{
   /* border:4px solid rgb(69, 48, 138); */
 }
-#map{
+iframe{
   position:absolute;
   border:5px solid rgb(69, 48, 138);
   border-radius: 10px 0 0 10px;
+  
 }
 form .name{
   display:flex;
