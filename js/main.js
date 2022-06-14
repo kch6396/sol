@@ -14,3 +14,9 @@ toggleBtn.addEventListener('click', () => {
   menu.classList.toggle('active');
   menu1.classList.toggle('active');
 });
+
+const sol=document.querySelector('.solution');
+const twosol= document.querySelector('.solutions-nav');
+sol.addEventListener('click', () =>{
+  twosol.classList.toggle('active');
+});

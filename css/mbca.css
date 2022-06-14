@@ -678,11 +678,25 @@ footer div .a{
   } */
   .solutions-nav{
     display:none;
+    font-size:10px;
+    opacity: 1;
   }
-  
+  header .main__nav .nav .nav__name .solutions-nav li{
+    border:none;
+    
+    
+  }
+  header .main__nav .nav .nav__name .solutions-nav{
+    visibility:visible;
+    opacity:1;
+  }
+
   .nav a{
     font-size:40px;
     top:20px;
+  }
+  header .main__nav .nav .nav__name .solutions-nav a{
+    font-size:23px;
   }
   div .main__nav{
     width:100%;
@@ -713,5 +727,9 @@ footer div .a{
   }
   header .main__nav .nav__name{
     height:200px;
+  }
+  .solutions-nav.active{
+    display:block;
+    
   }
 }
