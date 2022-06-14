@@ -620,6 +620,18 @@ footer div .a{
   }
   header .inner{
     width:100%;
+    
+  }
+  header{
+    
+    height:50px;
+  }
+  .logo img{
+    height:30px;
+    
+  }
+  a.logo{
+    margin:10px 0;
   }
   .middle .visual .inner{
     width:100%;
@@ -667,8 +679,8 @@ footer div .a{
     background-color: rgb(69, 48, 138);
     /* width:100; */
     width:100%;
-    height:400px;
-    top:-20px;
+    height:250px;
+    top:-76px;
     border-bottom:4px solid rgb(69, 48, 138);
     
   }
@@ -698,7 +710,7 @@ footer div .a{
     top:20px;
   }
   header .main__nav .nav .nav__name .solutions-nav a{
-    font-size:23px;
+    font-size:5px;
   }
   div .main__nav{
     width:100%;
@@ -719,6 +731,7 @@ footer div .a{
   }
   .nav__button{
     display:block;
+    top:0;
   }
   /* header .nav.active{
     display:flex;
@@ -728,7 +741,7 @@ footer div .a{
     display:flex;
   }
   header .main__nav .nav__name{
-    height:200px;
+    height:70px;
     
   }
   .solutions-nav.active{
@@ -737,15 +750,16 @@ footer div .a{
   }
   header .main__nav .nav .nav__name a{
     color:white;
+    font-size: 20px;
   }
   header .main__nav .nav .nav__name a:hover{
     color:white;
   }
   header .main__nav .nav .nav__name .solution{
-    color:slateblue;
+    color:midnightblue;
   }
   #underline a:hover {
-    color: slateblue;
+    color: midnightblue;
   }
   .middle .MBCA .inner .solution__top h3{
     font-size:25px;
@@ -773,8 +787,8 @@ footer div .a{
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: slateblue;
-    transition: all .6s;
+    background-color: white;
+    /* transition: all .6s; */
   }
   header .main__nav .nav .nav__name .solutions-nav li a::before{
     content:"";
@@ -783,8 +797,8 @@ footer div .a{
     bottom: -2px;
     width: 0;
     height: 2px;
-    background-color: slateblue;
-    transition: all .6s;
+    background-color: white;
+    /* transition: all .6s; */
   }
   header .main__nav .nav .nav__name .solutions-nav li a:hover::after{
     width:50%;
@@ -799,8 +813,8 @@ footer div .a{
     height: 4px;
     position: absolute;
     bottom: -4px;
-    background: slateblue;
-    transition: all .6s;
+    background: white;
+    /* transition: all .6s; */
     left:0;
   }
   header .main__nav .nav .nav__name a::after{
@@ -811,7 +825,7 @@ footer div .a{
     width: 0;
     height: 4px;
     background-color: white;
-    transition: all .6s;
+    /* transition: all .6s; */
     /* border-radius: 0 10px 10px 0; */
     
   }
@@ -823,7 +837,7 @@ footer div .a{
     width: 0;
     height: 4px;
     background-color: white;
-    transition: all .6s;
+    /* transition: all .6s; */
     /* border-radius: 10px 0 0 10px; */
   }
   header .main__nav .nav .nav__name a:hover::after{
