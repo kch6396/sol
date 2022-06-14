@@ -222,7 +222,7 @@ header .main__nav .nav .nav__name .solution{
   height: 200px;
   font-size:50px;
   top:90px;
-  left:70px;
+  left:50px;
   /* padding:20px 80px; */
   font-weight: bold;
   color:white;
@@ -639,8 +639,8 @@ footer div .a{
   }
   .visual .fade-in h2{
     position:absolute;
-    left:0;
-    right:0;
+    left:0px;
+    right:0px;
     margin: 0 auto;
     
   }
@@ -688,7 +688,7 @@ footer div .a{
     height: 270px;
     position:absolute;
     left:0;
-    right:-70px;
+    right:0px;
     margin:0 auto;
     top:130px;
     /* opacity: 0; */
