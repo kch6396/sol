@@ -72,7 +72,7 @@ header .main__nav .nav__name{
   padding:0 15px;
   margin:0 20px;
   z-index: 1;
-  height:200px;
+  height:100px;
   white-space:nowrap;
   
 }
@@ -710,5 +710,8 @@ footer div .a{
   } */
   div .main__nav.active{
     display:flex;
+  }
+  header .main__nav .nav__name{
+    height:200px;
   }
 }
