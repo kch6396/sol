@@ -211,6 +211,7 @@ header .main__nav .nav .nav__name .solution{
 }
 
 .middle .visual .inner{
+  position: relative;
   height:400px;
 }
 .middle .visual .inner h2{
@@ -224,6 +225,7 @@ header .main__nav .nav .nav__name .solution{
   margin:20px 20px;
   font-weight: bold;
   color:white;
+  /* color:black; */
 }
 .middle .inner .video iframe{
   position:absolute;
@@ -606,26 +608,28 @@ footer div .a{
   background-color: #ccc;
 }
 
-@media screen and (max-width:300px){
+@media screen and (max-width:700px){
   body{
     width:300px;
   }
-  .visual .inner{
+  .middle .visual .inner{
     width:100%;
+    height:650px;
     
-    
+  }
+  .middle .bg img{
+    height:650px;
   }
   .visual .fade-in .video iframe{
-    width:410px;
-    height:250px;
-    right:10px;
-    
+    width:400px;
+    height:225px;
+    right:0px;
+    top:350px;
+    position:relative;
   }
-  iframe{
-    position: relative;
-  
-
-    
+  .select{
+    width:400px;
+    margin:0 0;
   }
   .middle{
     width:400px;
@@ -639,7 +643,7 @@ footer div .a{
     text-align: center;
     background-color: white;
     /* width:100; */
-    
+    width:400px;
     height:700px;
     top:-20px;
     border:4px solid rgb(69, 48, 138);
@@ -666,7 +670,7 @@ footer div .a{
     position:absolute;
     left:0;
     right:0;
-    margin:0 auto;
+    /* margin:0 auto; */
   }
   .nav__button{
     display:block;
