@@ -623,17 +623,17 @@ footer div .a{
   }
   .middle .visual .inner{
     width:100%;
-    height:600px;
+    height:500px;
     
   }
   .middle .bg img{
-    height:602px;
+    height:502px;
   }
   .visual .fade-in .video iframe{
     width:350px;
     height:197px;
     right:0;
-    top:350px;
+    top:260px;
     position:absolute;
     left:0;
     margin:0 auto;
@@ -644,6 +644,7 @@ footer div .a{
     left:0px;
     right:0px;
     margin: 0 auto;
+    top:20px;
     
   }
   .choice .inner{
@@ -663,7 +664,7 @@ footer div .a{
     position:absolute;
     left:0;
     text-align: center;
-    background-color: white;
+    background-color: rgb(69, 48, 138);
     /* width:100; */
     width:100%;
     height:400px;
@@ -684,7 +685,7 @@ footer div .a{
   }
   header .main__nav .nav .nav__name .solutions-nav li{
     border:none;
-    
+    background-color: rgb(69, 48, 138);
     
   }
   header .main__nav .nav .nav__name .solutions-nav{
@@ -728,16 +729,23 @@ footer div .a{
   }
   header .main__nav .nav__name{
     height:200px;
+    
   }
   .solutions-nav.active{
     display:block;
     
   }
+  header .main__nav .nav .nav__name a{
+    color:white;
+  }
   header .main__nav .nav .nav__name a:hover{
-    color:black;
+    color:white;
+  }
+  header .main__nav .nav .nav__name .solution{
+    color:slateblue;
   }
   #underline a:hover {
-    color: rgb(69, 48, 138);
+    color: slateblue;
   }
   .middle .MBCA .inner .solution__top h3{
     font-size:25px;
@@ -758,4 +766,71 @@ footer div .a{
     height:100%;
     
   }
+  header .main__nav .nav .nav__name .solutions-nav li a::after{
+    content:"";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: slateblue;
+    transition: all .6s;
+  }
+  header .main__nav .nav .nav__name .solutions-nav li a::before{
+    content:"";
+    position: absolute;
+    right: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: slateblue;
+    transition: all .6s;
+  }
+  header .main__nav .nav .nav__name .solutions-nav li a:hover::after{
+    width:50%;
+  }
+  header .main__nav .nav .nav__name .solutions-nav li a:hover:before{
+    width:50%;
+  }
+  #underline .solution::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: -4px;
+    background: slateblue;
+    transition: all .6s;
+    left:0;
+  }
+  header .main__nav .nav .nav__name a::after{
+    content:"";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 4px;
+    background-color: white;
+    transition: all .6s;
+    /* border-radius: 0 10px 10px 0; */
+    
+  }
+  header .main__nav .nav .nav__name a::before{
+    content:"";
+    position: absolute;
+    right: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 4px;
+    background-color: white;
+    transition: all .6s;
+    /* border-radius: 10px 0 0 10px; */
+  }
+  header .main__nav .nav .nav__name a:hover::after{
+    width:50%;
+  }
+  header .main__nav .nav .nav__name a:hover::before{
+    width:50%;
+  }
+  
 }
