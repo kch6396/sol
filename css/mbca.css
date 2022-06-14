@@ -605,7 +605,8 @@ footer div .a{
   background-color: #ccc;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:400px){
+  
   .visual .inner{
     width:100%;
     
@@ -622,6 +623,9 @@ footer div .a{
   
 
     
+  }
+  .middle{
+    width:400px;
   }
 
   header .nav{
