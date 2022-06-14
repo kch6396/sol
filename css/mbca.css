@@ -223,7 +223,7 @@ header .main__nav .nav .nav__name .solution{
   font-size:50px;
   top:70px;
   left:50px;
-  margin:20px 20px;
+  padding:20px 20px;
   font-weight: bold;
   color:white;
   /* color:black; */
@@ -613,6 +613,9 @@ footer div .a{
   body{
     width:100%;
   }
+  .inner{
+    width:100%;
+  }
   header .inner{
     width:100%;
   }
@@ -627,9 +630,17 @@ footer div .a{
   .visual .fade-in .video iframe{
     width:400px;
     height:225px;
-    right:0px;
+    right:0;
     top:350px;
-    position:relative;
+    position:absolute;
+    left:0;
+    margin:0 auto;
+  }
+  .visual .fade-in h2{
+    position:absolute;
+    left:0;
+    right:0;
+    margin: 0 auto;
   }
   .choice .inner{
     width:100%;
