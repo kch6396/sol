@@ -185,7 +185,7 @@ header .main__nav .nav .nav__name .solution{
 
 .nav__button{
   position:absolute;
-  right: 350px;
+  left: 300px;
   
   font-size: 24px;
   display: none;
