@@ -88,6 +88,7 @@ header .main__nav .nav .nav__name .solutions-nav {
   background-color: white;
   transition: all .5s;
 }
+
 header .main__nav .nav .nav__name:hover .solutions-nav{
   /* display:block; */
   visibility:visible;
@@ -624,19 +625,24 @@ footer div .a{
     width:100%;
   }
   header{
-    height:80px;
+    height:50px;
   }
   header .inner{
+    position: relative;
     width:100%;
-    height:80px;
+    height:50px;
   }
   header .logo img{
+    position:absolute;
     height:30px;
     width: 80px;;
+    top:0;
+    bottom:0;
+    margin:auto 0;
   }
   header .logo{
     width:80px;
-    height:30px;
+    
   }
   .middle .visual .inner{
     width:100%;
@@ -683,7 +689,7 @@ footer div .a{
     /* width:100; */
     width:100%;
     height:165px;
-    top:-46px;
+    top:-76px;
     border-bottom:4px solid rgb(69, 48, 138);
     align-items: center;
   }
@@ -741,7 +747,7 @@ footer div .a{
     display:block;
     height:0;
     position: absolute;
-    top:-45px;
+    top:-40px;
   }
   .nav__button img{
     /* position:absolute; */
@@ -749,6 +755,8 @@ footer div .a{
     /* top:0; */
     /* bottom:0; */
     /* margin:auto 0; */
+    width:40px;
+    height:40px;
   }
   /* header .nav.active{
     display:flex;
@@ -811,4 +819,8 @@ footer div .a{
   header .main__nav .nav__name :nth-child(1){
     margin-top:0;
   }
+  /* .solution a{
+    display:flex;
+  } */
+  
 }
