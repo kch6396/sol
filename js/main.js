@@ -17,6 +17,10 @@ toggleBtn.addEventListener('click', () => {
 
 const sol=document.querySelector('.solution');
 const twosol= document.querySelector('.solutions-nav');
+const twosol2=document.querySelector('#underline');
+const twosol3=document.querySelector('.nav');
 sol.addEventListener('click', () =>{
   twosol.classList.toggle('active');
+  twosol2.classList.toggle('active');
+  twosol3.classList.toggle('active2');
 });
