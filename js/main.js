@@ -24,3 +24,8 @@ sol.addEventListener('click', () =>{
   twosol2.classList.toggle('active');
   twosol3.classList.toggle('active2');
 });
+
+// var content = document.getElementsByClassName('second__image')[0];
+var content = document.getElementsByClassName('second__write')[0];
+var parent = content.parentNode;
+parent.insertBefore(content, parent.childNodes[2]);
