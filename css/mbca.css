@@ -10,7 +10,7 @@ body {
 
 img {
   display: block;
-  height:50px;
+  /* height:50px; */
 }
 a{
   text-decoration: none;
@@ -47,6 +47,12 @@ header .logo{
   bottom:0;
   left:10px;
   margin:25px 0;
+}
+header .logo img{
+  
+  width:100%;
+  height:70%;
+  
   
 }
 
@@ -55,7 +61,7 @@ header .main__nav{
   height:50px;
   position: absolute;
   top:60px;
-  right:-90px;
+  right:-80px;
 }
 
 
@@ -84,7 +90,7 @@ header .main__nav .nav .nav__name .solutions-nav {
   /* display:none; */
   visibility:hidden;
   opacity:0;
-  margin:5px 0 0 0;
+  margin:10px 0 0 0;
   background-color: white;
   transition: all .5s;
 }
@@ -309,9 +315,14 @@ header .main__nav .nav .nav__name .solution{
   color: linear-gradient(to right, #a10842, #880b42 ,#4b0c42 , #150b41 60%);
   font-weight: bold;
   margin:50px 0 0px 0;
+  font-size: 3vmin;
 }
 .middle .MBCA .inner .solution__top h4{
   font-size:20px;
+  font-size: 2vmin;
+}
+.MBCA__DESC h5{
+  font-size: 2.5vmin;
 }
 
 /* .middle .MBCA .inner .MBCAWHAT{
@@ -322,7 +333,7 @@ header .main__nav .nav .nav__name .solution{
 .middle .MBCA .inner .MBCAWHAT img{
   margin:0 auto;
   width: 99%;
-  height:400px;
+  /* height:400px; */
 }
 .middle .MBCA .inner .MBCA__DESC{
   font-size:20px;
@@ -340,6 +351,7 @@ header .main__nav .nav .nav__name .solution{
   color:rgba(69, 48, 138);
   font-weight: bold;
   margin:50px 0 0 0;
+  font-size: 3vmin;
 }
 /* .middle .advantage .inner .first-adv .MBCA__why{
   
@@ -378,6 +390,7 @@ header .main__nav .nav .nav__name .solution{
   margin:auto auto;
   margin-right:10px;
   word-break:break-all;
+  font-size: 3vmin;
 }
 .middle .advantage .inner .first-adv{
   width: 100%;
@@ -427,6 +440,7 @@ header .main__nav .nav .nav__name .solution{
   margin-left:10px;
   font-weight: bold;
   word-break:break-all;
+  font-size: 3vmin;
 }
 .middle .advantage .inner .second-adv{
   width: 100%;
@@ -472,6 +486,7 @@ header .main__nav .nav .nav__name .solution{
   margin-right:10px;
   font-weight: bold;
   word-break:break-all;
+  font-size: 3vmin;
 }
 .middle .advantage .inner .third-adv{
   width: 100%;
@@ -485,6 +500,7 @@ header .main__nav .nav .nav__name .solution{
   color:rgba(69, 48, 138);
   font-weight: bold;
   margin:50px 0 0 0;
+  font-size:3vmin;
 }
 
 
@@ -509,7 +525,7 @@ header .main__nav .nav .nav__name .solution{
   margin-left:50px;
 }
 .vision .first .first__write{
-  font-size:25px;
+  font-size: 3vmin;
   text-align: center;
   font-weight: bold;
 }
@@ -522,7 +538,7 @@ header .main__nav .nav .nav__name .solution{
 }
 .vision .second .second__write{
   width:300px;
-  font-size:25px;
+  font-size: 3vmin;
   text-align: center;
   font-weight: bold;
 }
@@ -534,7 +550,7 @@ header .main__nav .nav .nav__name .solution{
   margin-top:30px;
 }
 .vision .third .third__write{
-  font-size:25px;
+  font-size: 3vmin;
   text-align: center;
   font-weight: bold;
 }
@@ -543,10 +559,11 @@ header .main__nav .nav .nav__name .solution{
 
 /* EXAMPLE */
 .middle .example .inner .solution__example{
-  font-size:30px;
+  font-size:25px;
   color:rgba(69, 48, 138);
   font-weight: bold;
   margin:50px 0 0 0;
+  font-size:3vmin;
 }
 .middle .example{
   width: 100%;
@@ -561,42 +578,59 @@ header .main__nav .nav .nav__name .solution{
   position: relative;
   display:flex;
   margin-top:50px;
-  top:450px;
+  /* top:450px; */
 }
 .middle .example .inner .first__example__image{
-  position: absolute;
-  background-color: #e5e5e5;
-  width:600px;
-  height:400px;
+  /* position: absolute; */
+  /* background-color: #e5e5e5; */
+  width:55%;
+  /* height:300px; */
+  left:0;
+  right:0;
+  margin:0 auto;
 }
 .middle .example .inner .first__example__image img{
-  width:600px;
-  height:400px;
+  /* width:600px;
+  height:400px; */
+  width:100%;
+  
 }
 .middle .example .inner .second__example__image{
-  position: absolute;
-  background-color: #e5e5e5;
-  width:600px;
-  height:400px;
+  /* position: absolute; */
+  width:55%;
+  /* height:300px; */
+  left:0;
   right:0;
+  margin:0 auto;
+  /* right:0; */
 }
 .middle .example .inner .second__example__image img{
-  width:600px;
-  height:400px;
+  width:100%;
+  /* height:400px; */
 }
 .middle .example .inner .first__example__write{
-  position: absolute;
-  font-size: 40px;
+  /* position: absolute; */
+  font-size: 4vmin;
   font-weight: bold;
   right:100px;
-  top:100px;
+  /* top:100px; */
+  /* width:300px; */
+  /* height:350px; */
+  text-align: center;
+  margin:auto;
+  word-break:break-all;
 }
 .middle .example .inner .second__example__write{
-  position: absolute;
-  font-size: 40px;
+  /* position: absolute; */
+  font-size: 4vmin;
   font-weight: bold;
   left:100px;
-  top:100px;
+  /* top:100px; */
+  /* width:300px; */
+  /* height:350px; */
+  text-align: center;
+  margin:auto;
+  word-break:break-all;
 }
 /* Contact us */
 .middle .contact{
@@ -728,10 +762,10 @@ footer div .a{
     margin: 0 auto;
     top:40px;
   }
-  .middle .advantage .inner .solution__why{
+  /* .middle .advantage .inner .solution__why{
     text-align: center;
     font-size: 25px;
-  }
+  } */
   /* .middle .advantage .inner .first-adv {
     display:block;
   }
@@ -811,7 +845,7 @@ footer div .a{
     width:60%;
   } */
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:730px){
   body{
     width:100%;
   }
@@ -1005,7 +1039,7 @@ footer div .a{
   
   .middle .MBCA .inner .MBCAWHAT img{
     width:95%;
-    height:100%;
+    /* height:100%; */
     
   }
   header .main__nav .nav__name{
@@ -1049,6 +1083,7 @@ footer div .a{
     left:0;
     right:0;
     margin:0 auto;
+    font-size: 4vw;
   }
 
 
@@ -1079,6 +1114,7 @@ footer div .a{
     left:0;
     right:0;
     margin:0 auto;
+    font-size: 4vw;
   }
   
 
@@ -1109,6 +1145,7 @@ footer div .a{
     left:0;
     right:0;
     margin:0 auto;
+    font-size: 4vw;
   }
   .vision__inner{
     width:100%;
@@ -1136,6 +1173,7 @@ footer div .a{
     right:0;
     margin:0 auto;
     margin-bottom: 35px;
+    font-size: 4vw;
   }
   .vision .second .second__image{
     width:60%;
@@ -1149,6 +1187,7 @@ footer div .a{
     right:0;
     margin:0 auto;
     margin-bottom: 35px;
+    font-size: 4vw;
   }
   .vision .third .third__image{
     width:60%;
@@ -1162,16 +1201,19 @@ footer div .a{
     right:0;
     margin:0 auto;
     margin-bottom: 35px;
+    font-size: 4vw;
   }
 
   .middle .example .inner .solution__example{
     font-size:25px;
     text-align: center;
+    font-size: 4vw;
   }
   .middle .example .inner .first__example{
     display:flex;
     flex-direction: column;
     margin-top:20px;
+    font-size: 4vw;
   }
 
   .middle .example .inner .first__example__image img{
@@ -1202,6 +1244,7 @@ footer div .a{
     left:0;
     right:0;
     margin:auto;
+    font-size: 4vw;
   }
 
   .middle .example .inner .second__example{
@@ -1223,6 +1266,7 @@ footer div .a{
     text-align: center;
     left:0;
     right:0;
+    font-size: 4vw;
   }
   
 }

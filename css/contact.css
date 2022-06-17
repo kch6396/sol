@@ -54,7 +54,7 @@ header .main__nav{
   height:50px;
   position: absolute;
   top:60px;
-  right:-90px;
+  right:-80px;
 }
 
 
@@ -81,7 +81,7 @@ header .main__nav .nav .nav__name .solutions-nav {
   /* display:none; */
   visibility:hidden;
   opacity:0;
-  margin:5px 0 0 0;
+  margin:10px 0 0 0;
   background-color: white;
   transition: all .5s;
 }
