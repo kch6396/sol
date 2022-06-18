@@ -1093,13 +1093,13 @@ footer div .a{
     display:flex;
   } */
   .inner .select .left{
-    font-size:3.8vmin;
+    font-size:3.8vw;
   }
   .inner .select .right{
-    font-size:3.8vmin;
+    font-size:3.8vw;
   }
   .MBCA__DESC h5{
-    font-size:3vmin;
+    font-size:3vw;
   }
   .middle .advantage .inner .solution__why{
     text-align: center;
