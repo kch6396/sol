@@ -298,8 +298,8 @@ header .main__nav .nav .nav__name .solution{
   margin:0 auto;
   overflow: hidden;
   background-color: rgb(69, 48, 138);
-  padding-bottom: 2.5%;
-  min-height:10px
+  padding-bottom: 2%;
+  min-height:15px
 }
 .inner .select .left .left__content{
   
@@ -326,8 +326,8 @@ header .main__nav .nav .nav__name .solution{
   margin:0 auto;
   overflow: hidden;
   background-color: rgb(107, 84, 182);
-  padding-bottom: 2.5%;
-  min-height:10px
+  padding-bottom: 2%;
+  min-height:15px
 }
 .inner .select .right .right__content{
   
@@ -1092,6 +1092,12 @@ footer div .a{
   /* .solution a{
     display:flex;
   } */
+  .inner .select .left{
+    font-size:4vmin;
+  }
+  .inner .select .right{
+    font-size:4vmin;
+  }
   .middle .advantage .inner .solution__why{
     text-align: center;
     font-size: 25px;
