@@ -304,7 +304,7 @@ header .main__nav .nav .nav__name .solution{
   padding-bottom: 2%;
   min-height:15px
 }
-/* .inner .select .left .left__content{
+.inner .select .left .left__content{
   
   position:absolute;
   top:0;
@@ -312,7 +312,7 @@ header .main__nav .nav .nav__name .solution{
   width:50%;
   height:100%;
   
-} */
+}
 
 /* .inner .select .right{
   width:50%;
@@ -335,7 +335,7 @@ header .main__nav .nav .nav__name .solution{
   padding-bottom: 2%;
   min-height:15px
 }
-/* .inner .select .right .right__content{
+.inner .select .right .right__content{
   
   position:absolute;
   top:0;
@@ -343,7 +343,7 @@ header .main__nav .nav .nav__name .solution{
   width:50%;
   height:100%;
   
-} */
+}
 /* MBCA 설명 */
 .line{
   width:100%;
