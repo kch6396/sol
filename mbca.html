@@ -17,7 +17,17 @@
   <script src="./js/main.js" defer></script>
 </head>
 <body style="overflow-x: hidden"> 
-  
+  <div id="map" style="width:500px;height:400px;"></div>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=271dc02bb1bbd6dd7061af973ceada79"></script>
+	<script>
+		var container = document.getElementById('map');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
   <header>
     <div class="inner">
       <a href="javascript:void(0)" class="logo">

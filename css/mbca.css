@@ -371,6 +371,7 @@ header .main__nav .nav .nav__name .solution{
 .middle .MBCA .inner .solution__top h4{
   font-size:20px;
   font-size: 2vmin;
+  
 }
 .MBCA__DESC h5{
   font-size: 2vmin;
@@ -896,7 +897,7 @@ footer div .a{
     width:60%;
   } */
 }
-@media screen and (max-width:730px){
+@media screen and (max-width:768px){
   body{
     width:100%;
   }
@@ -1213,6 +1214,16 @@ footer div .a{
     margin:0 auto;
     font-size: 4vw;
   }
+
+
+
+
+
+
+
+
+
+
   .vision__inner{
     width:100%;
     left:0;
@@ -1271,6 +1282,23 @@ footer div .a{
     font-size: 4vw;
   }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   .middle .example .inner .solution__example{
     font-size:25px;
     text-align: center;
