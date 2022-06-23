@@ -5,20 +5,13 @@ body {
   line-height:1.4;
   /* font-family: 'Nanum Gothic', sans-serif; */
   font-family: 'Secular One', sans-serif;
+  
 }
 
 img {
   display: block;
   
 }
-.bg{
-  top:114px;
-  top:855px;
-  width:100%;
-  height:100%;
-  position:absolute;
-}
-
 a{
   text-decoration: none;
   cursor: pointer;
@@ -31,6 +24,7 @@ a{
   position: relative;
   
 }
+
 
 
 /*HEADER*/
@@ -54,13 +48,10 @@ header .logo{
   bottom:0;
   left:10px;
   margin:25px 0;
+
 }
 header .logo img{
-  
-  width:100%;
-  height:70%;
-  
-  
+  height:50px;
 }
 
 header .main__nav{
@@ -76,7 +67,7 @@ header .nav{
   position: relative;
   display:flex;
   text-align: right;
-  
+
 }
 header .main__nav .nav__name{
   font-size:20px;
@@ -85,9 +76,7 @@ header .main__nav .nav__name{
   padding:0 15px;
   margin:0 20px;
   z-index: 1;
-  height:20px;
-  white-space:nowrap;
-  
+  height:27px;
 }
 
 header .main__nav .nav__name:hover{
@@ -101,7 +90,6 @@ header .main__nav .nav .nav__name .solutions-nav {
   background-color: white;
   transition: all .5s;
 }
-
 header .main__nav .nav .nav__name:hover .solutions-nav{
   /* display:block; */
   visibility:visible;
@@ -118,7 +106,7 @@ header .main__nav .nav .nav__name .solutions-nav li{
 header .main__nav .nav .nav__name .solutions-nav li:first-child {
   border-bottom:none;
 }
-header .main__nav .nav .nav__name .solutions-nav li a::after{
+header .main__nav .nav .nav__name .solutions-nav li a:after{
   content:"";
   position: absolute;
   left: 50%;
@@ -128,7 +116,7 @@ header .main__nav .nav .nav__name .solutions-nav li a::after{
   background-color: rgb(69, 48, 138);
   transition: all .6s;
 }
-header .main__nav .nav .nav__name .solutions-nav li a::before{
+header .main__nav .nav .nav__name .solutions-nav li a:before{
   content:"";
   position: absolute;
   right: 50%;
@@ -141,7 +129,7 @@ header .main__nav .nav .nav__name .solutions-nav li a::before{
 header .main__nav .nav .nav__name .solutions-nav li a:hover::after{
   width:50%;
 }
-header .main__nav .nav .nav__name .solutions-nav li a:hover:before{
+header .main__nav .nav .nav__name .solutions-nav li a:hover::before{
   width:50%;
 }
 #underline .solution::after{
@@ -155,7 +143,21 @@ header .main__nav .nav .nav__name .solutions-nav li a:hover:before{
   transition: all .6s;
   left:0;
 }
-
+#underline a{
+  /* position: relative; */
+  color:rgb(69, 48, 138);
+}
+#underline a::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: -4px;
+  background: rgb(69, 48, 138);
+  transition: all .6s;
+  left:0;
+}
 #underline a:hover{
   color:rgba(33,33,33,0.7);
 }
@@ -194,176 +196,170 @@ header .main__nav .nav .nav__name a:hover::before{
 header .main__nav .nav .nav__name a:hover{
   color:rgba(33,33,33,0.7);
 }
-header .main__nav .nav .nav__name .solution{
+
+/* header .main__nav .nav .nav__name .solution{
   color:rgb(69, 48, 138);
+  text-decoration: underline;
+} */
+
+
+
+
+.contact{
+  width:100%;
 }
-
-.nav__button{
-  /* display:block; */
-  position:absolute;
-  right: 15px;
-  width:48px;
-  font-size: 24px;
-  display: none;
-  /* top:30px; */
-  top:0;
-  bottom:0;
-  margin: auto 0;
-  /* align-items: right; */
+.contact .inner{
+  width:1400px;
 }
-
-
-
-/* MIDDIE  */
+.contact .inner .middle{
+  position:relative;
+}
 .middle{
-  position: relative;
-  width: 100%;
-  height:100%;
-  top:114px;
-  display: flex;
+  top:160px;
+  width:100%;
 }
-.middle__bg{
-  position: absolute;
-  top:-114px;
-  width: 225%;
-  height:100%;
+.item{
+  display:block;
 }
-.middle .left{
-  position: fixed;
-  width:45%;
-  height:100%;
-}
-.middle .left .left__contact{
-  position: absolute;
-  width:40%;
-  height:600px;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
-  margin:auto;
-}
-
-.middle .left .left__contact::before{
-  content: "";
-  width: 4px;
-  height: 170px;
-  background-color: #888;
-  position: absolute;
-  top: 0;
-  bottom:-30px;
-  margin: auto;
-}
-
-.middle .left h1{
+form{
+  width:520px;
+  position:absolute;
+  /* right:20px; */
   font-weight: bold;
-  font-size:70px;
-  color:rgb(69, 48, 138);
+  color:white;
+  color:black;
+  top:20px;
+  display:inline-block;
+  right:0;
+  border:3px solid #fff;
+  padding:50px;
 }
-.middle .left .left__space{
-  width:2px;
-  height:35px;
+form input{
+  width:518px;
+  height:45px;
+  margin-bottom: 10px;
+  /* border:3px solid rgb(69, 48, 138); */
+  box-sizing:border-box;
+  border-radius: 10px;
+  border:none;
+  font-size:20px;
+  font-weight: bold;
 }
-.middle .left .left__contact p{
-  font-size: 15px;
-  color:rgb(69, 48, 138);
+form input:focus{
+  /* border:4px solid rgb(69, 48, 138); */
 }
-.middle .left .left__contact .phone{
+
+textarea {
+  width:518px;
+  min-height: 100px;
+  resize: none;
+  font-size:18px;
+  border-radius: 10px;
+  box-sizing:border-box;
+  /* border:3px solid rgb(69, 48, 138); */
+  font-size:20px;
+  font-weight: bold;
+}
+textarea:focus{
+  /* border:4px solid rgb(69, 48, 138); */
+}
+/* iframe{
+  position:absolute;
+  border:5px solid rgb(69, 48, 138);
+  border-radius: 10px 0 0 10px;
+  
+}*/
+form .name{ 
   display:flex;
 }
-.middle .left .left__contact .phone img{
-  margin: 0 10px 10px 15px;
-  height:25px;
-}
-.middle .left .left__contact .pin{
-  display: flex;
-}
-.middle .left .left__contact .pin img{
-  height:25px;
-  margin: 0 10px 10px 15px;
+#lastname {
+  margin-bottom: 0;
+  width:254px;
 }
 
-.middle .right{
-  position: absolute;
-  right:0;
-  width:65%;
-  height:855px;
+#firstname {
+  margin-bottom: 0;
+  width:254px;
+  
 }
-.middle .right .map{
-  position:relative;
-  width:100%;
-  height:100%;
+.space{
+  width:10px;
+  height:5px;
 }
-.middle .right .map #map{
-  width:80%;
-  height:65%;
+
+.jop{
+  margin-top:10px;
+}
+
+.space2{
+  width:10px;
+  height:10px;
+}
+
+/* .line{
+  
   position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-}
-.middle .right .table{
-  width:100%;
-  height:100%;
-  position: relative;
-}
-.middle .right .table .container{
-  width:70%;
-  height:55%;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
-  padding:auto;
-  color:rgb(69, 48, 138);
+  width:1440px;
+  height:775px;
+  border:5px solid rgb(69, 48, 138);
+  background-color: rgb(69, 48, 138);
+  border-radius: 10px;
+} */
+input::placeholder {
   font-weight: bold;
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Secular One', sans-serif;
+  font-size:18px;
+}
+textarea::placeholder {
+  /* font-weight: 600; */
+  /* font-family: 'Nanum Gothic', sans-serif; */
+  font-family: 'Secular One', sans-serif;
   font-size:20px;
 }
-
-.middle .right .table .container form input{
-  padding: 10px 0;
-  border: none;
-  border-bottom: 1px solid #999;
-  outline: none;   
-  background-color: transparent;
-  margin-right:30px;
-  width:300px;
-  font-weight: bold;
-  
+.under-write{
+  font-size: 14px;
 }
 
-.middle .right .table .container form input:focus{
-  border-bottom:2px solid rgb(69, 48, 138);
-}
-.middle .right .table .container form .first{
-  display:flex;
-}
-.middle .right .table .container form .second{
-  display:flex;
-}
-.middle .right .table .container form .second .subname{
-  font-size:15px;
-}
-.middle .right .table .container form .third{
-  display:flex;
-}
-.middle .right .table .container form textarea{
-  position:relative;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #999;
-  outline: none;
-  width:630px;
-  resize: none;
+.btn1{
+  margin-top:5px;
+  cursor: pointer;
+  border-radius: 10px;
+  width:20%;
+  height:50px;
+  transition: all 0.6s;
   font-weight: bold;
-  padding: 10px 0;
-  max-height:150px;
+  font-size:18px;
+  border:none;
+  margin-left:415px;
+  background-color: white;
+  border:4px solid white;
+  letter-spacing: 3px;
+  padding-left:9px;
+  color:rgb(69, 48, 138);
+  font-family: 'Secular One', sans-serif;
 }
-.middle .right .table .container form textarea:focus{
+.btn1:hover{
+  color:white;
+  background-color:rgb(69, 48, 138);
   
-  border-bottom:2px solid rgb(69, 48, 138);
+  border:4px solid white;
 }
+
+
+footer{
+  position:absolute;
+  height:300px;
+  width:100%;
+  top:1000px;
+  /* border-top:5px solid rgb(69, 48, 138); */
+  background-color: white;
+  
+}
+footer div .a{
+  width:100%;
+  height:300px;
+  background-color: rgb(69, 48, 138);
+  /* border:5px solid rgb(69, 48, 138); */
+}
+
