@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="./css/contact.css" />
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script defer src="./js/map.js"></script>
   <title>FBOE__Contact us</title>
 </head>
@@ -25,41 +27,41 @@
       <div class="main__nav">
         <ul class="nav">
           <div class="nav__name"><a href="javascript:void(0)">Home</a></div>
-          <div class="nav__name"><a class="solution" href="./mbca.html">Solutions</a>
+          <div class="nav__name" id="underline"><a class="solution" href="./mbca.html">Solutions</a>
             <ul class="solutions-nav">
               <li><a href="./mbca.html">MBCA</a></li>
               <li><a href="./amc.html">AMC</a></li>
             </ul>
           </div>
           <div class="nav__name"><a href="javascript:void(0)">About us</a></div>
-          <div class="nav__name" id="underline"><a href="./contact.html">Contact us</a></div>
+          <div class="nav__name" id="underline"><a href="./contact.html" class="contactus">Contact us</a></div>
         </ul>
       </div>
     </div>
   </header>
   <div class="middle">
-    <div class="left">
+    <div class="left scroll-spy">
       <img class="middle__bg" src="./images/BG.png" alt="">
-      <div class="left__contact">
-        <h1>CONTACT US</h1>
+      <div class="left__contact back-to-position to-up delay-0">
+        <h1>Contact us</h1>
         <div class="left__space"></div>
-        <div class="pin">
+        <div class="pin back-to-position to-right delay-2">
           <img src="./images/pin.png" alt="">
-          <p>울산시------</p>
+          <p>울산광역시 중구 종가로 406-21<br> 울산비즈파크 1033호</p>
         </div>
         <br><br>
-        <div class="phone">
-          <img src="./images/phone.png" alt="">
+        <div class="phone pin back-to-position to-right delay-2">
+          <img src="./images/mail.png" alt="">
           <div class="phone__number">
-            <p>010-0000-1111</p>
+            <!-- <p>010-0000-1111</p> -->
             <p>cjfghks@gmail.com</p>
           </div>
         </div>
       </div>
     </div>
     <div class="right">
-      <div class="table">
-        <div class="container"> 
+      <div class="table scroll-spy">
+        <div class="container back-to-position to-left delay-1"> 
           <form action="{% url 'users:meeting' %}" class="sign" method="post">
             <!-- {% csrf_token %} -->
             <div class="first">
@@ -98,7 +100,7 @@
             <br>
             <div>M e s s a g e<br>
               <label for="meeting"></label>
-              <textarea name="message" class="autosize" onkeydown="resize(this)" onkeyup="resize(this)" style="height:15px;" placeholder="Message"></textarea>
+              <textarea name="message" class="autosize" onkeydown="resize(this)" onkeyup="resize(this)" style="height:25px;" placeholder="Message"></textarea>
               <script>
                 function resize(obj) {
                   obj.style.height = "1px";
@@ -106,15 +108,15 @@
                 }
                 </script>
             </div>
-            <div class="bt">
-              <input type="submit" value="Send" class="btn1" onclick="test()">
+            <div class="bt back-to-position to-down delay-2">
+              <input type="submit" value="Submit" class="btn" onclick="test()">
             </div>
           </form>
           <!-- <a href="{%url 'users:main' %}" ><button>돌아가기</button></a> -->
         </div>
       </div>
-      <div class="map">
-        <div id="map"></div>
+      <div class="map scroll-spy">
+        <div id="map" class="back-to-position to-left"></div>
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=271dc02bb1bbd6dd7061af973ceada79"></script>
       </div>
     </div>
