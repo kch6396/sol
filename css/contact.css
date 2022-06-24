@@ -36,10 +36,10 @@ a{
   transition: 1s;
 }
 .back-to-position.to-right{
-  transform: translateX(-150px);
+  transform: translateX(-7vw);
 }
 .back-to-position.to-left{
-  transform: translateX(100px);
+  transform: translateX(6vw);
 }
 .back-to-position.to-up{
   transform: translateY(-150px);
@@ -277,11 +277,11 @@ header .main__nav .nav .nav__name .contactus{
 .middle .left .left__contact::before{
   content: "";
   width: 4px;
-  height: 170px;
+  height: 130px;
   background-color: #888;
   position: absolute;
   top: 0;
-  bottom:-30px;
+  bottom:-80px;
   margin: auto;
 }
 
@@ -292,11 +292,11 @@ header .main__nav .nav .nav__name .contactus{
 }
 .middle .left .left__space{
   width:2px;
-  height:35px;
+  height:80px;
 }
 .middle .left .left__contact p{
   font-size: 15px;
-  color:rgb(69, 48, 138);
+  color:black;
 }
 .middle .left .left__contact .phone{
   display:flex;
