@@ -30,10 +30,10 @@ a{
   transition: 1s;
 }
 .back-to-position.to-right{
-  transform: translateX(-150px);
+  transform: translateX(-7vw);
 }
 .back-to-position.to-left{
-  transform: translateX(100px);
+  transform: translateX(7vw);
 }
 .back-to-position.to-up{
   transform: translateY(-150px);
@@ -57,8 +57,12 @@ a{
 .show .back-to-position.delay-3{
   transition-delay: 0.9s;
 }
-
-
+.show .back-to-position.delay-4{
+  transition-delay: 1.2s;
+}
+.show .back-to-position.delay-5{
+  transition-delay: 1.5s;
+}
 
 /*HEADER*/
 header {
@@ -250,7 +254,11 @@ header .main__nav .nav .nav__name .solution{
   background-color:rgb(69, 48, 138);
   
 }
-
+/* .middle .bg{
+  position:relative;
+  width:100%;
+  height:100%;
+} */
 .middle .bg img{
   position:absolute;
   width:100%;
@@ -275,13 +283,15 @@ header .main__nav .nav .nav__name .solution{
   color:white;
   /* color:black; */
 }
-.middle .inner .video iframe{
-  position:absolute;
-  right:100px;
-  top:80px;
-  width:490px;
-  height:275px;
-  
+
+.middle .inner .video video{
+  position: absolute;
+  width:412px;
+  height:320px;
+  top:400px;
+  bottom:0;
+  margin:auto;
+  right:50px;
 }
 /* .visual .fade-in{
   opacity:0;
@@ -290,7 +300,7 @@ header .main__nav .nav .nav__name .solution{
 
 /* MBCA AMC 선택 바 */
 .select{
-  position: relative;
+  /* position: relative; */
   width:100%;
   /* height: 40px; */
   /* background-color:#e5e5e5; */
@@ -448,6 +458,7 @@ header .main__nav .nav .nav__name .solution{
 
 .middle .advantage .inner .first-adv .MBCA__why{
   background-color: #e5e5e5;
+  background-color: blue;
   width:45%;
   height:0;
   right:0;
@@ -496,6 +507,7 @@ header .main__nav .nav .nav__name .solution{
 
 .middle .advantage .inner .second-adv .MBCA__why{
   background-color: #e5e5e5;
+  background-color: blue;
   width:45%;
   height:0;
   right:0;
@@ -546,6 +558,7 @@ header .main__nav .nav .nav__name .solution{
 
 .middle .advantage .inner .third-adv .MBCA__why{
   background-color: #e5e5e5;
+  background-color: blue;
   width:45%;
   height:0;
   right:0;
@@ -604,6 +617,7 @@ header .main__nav .nav .nav__name .solution{
 }
 .vision .first .first__image{
   background-color: #e5e5e5;
+  background-color: blue;
   width:300px;
   height:350px;
   margin-top:30px;
@@ -617,6 +631,7 @@ header .main__nav .nav .nav__name .solution{
 }
 .vision .second .second__image{
   background-color: #e5e5e5;
+  background-color: blue;
   width:300px;
   height:350px;
   margin-top:30px;
@@ -631,6 +646,7 @@ header .main__nav .nav .nav__name .solution{
 
 .vision .third .third__image{
   background-color: #e5e5e5;
+  background-color: blue;
   width:300px;
   height:350px;
   margin-top:30px;
@@ -831,11 +847,11 @@ footer div .a{
   .middle .bg img{
     height:560px;
   }
-  .visual .fade-in .video iframe{
-    width:350px;
-    height:197px;
+  .visual .fade-in .video video{
+    width:400px;
+    height:308px;
     right:0;
-    top:310px;
+    top:240px;
     position:absolute;
     left:0;
     margin:0 auto;
@@ -846,7 +862,7 @@ footer div .a{
     left:0px;
     right:0px;
     margin: 0 auto;
-    top:40px;
+    top:20px;
   }
   /* .middle .advantage .inner .solution__why{
     text-align: center;
@@ -958,19 +974,25 @@ footer div .a{
     width:80px;
     
   }
-  .middle .visual .inner{
+
+  /* .middle .visual .inner{
     width:100%;
-    height:365px;
+    height:558px;
     
   }
   .middle .bg img{
-    height:366px;
+    height:560px;
   }
-  .visual .fade-in .video iframe{
-    width:300px;
-    height:168px;
+  .visual .fade-in .video {
+    left:0;
     right:0;
-    top:170px;
+    margin:auto;
+  }
+  .visual .fade-in .video video{
+    width:350px;
+    height:197px;
+    right:0;
+    top:310px;
     position:absolute;
     left:0;
     margin:0 auto;
@@ -981,8 +1003,54 @@ footer div .a{
     left:0px;
     right:0px;
     margin: 0 auto;
+    top:40px;
+  } */
+  .middle .visual .inner{
+    width:100%;
+    height:365px;
+    
+  }
+  .middle .bg img{
+    height:366px;
+  }
+
+  
+  .visual .fade-in .video video {
+    width: 300px;
+    height: 168px;
+    right: 0;
+    top: 170px;
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+}
+  .middle .visual .inner h2{
+    position:absolute;
+    left:0px;
+    right:-50px;
+    margin: 0 auto;
     top:10px;
     font-size:35px;
+  }
+
+  .middle .inner .video{
+    position: absolute;
+    left:0;
+    right:0;
+    margin:auto;
+    padding:auto;
+  }
+  .visual .fade-in .video video{
+    position: absolute;
+    width: 258px;
+    max-width: 100%;
+    height: auto;
+    inset: 100px 0px 0px;
+    margin: auto;
+    top: 505px;
+    bottom: 0;
+    
+    
   }
   .choice .inner{
     width:100%;
