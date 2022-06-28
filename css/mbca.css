@@ -915,19 +915,20 @@ textarea {
 footer{
   position: relative;
   top:250px;
-  width: 100%;
-}
-footer div .a{
   width:100%;
+  background-color: red;
+}
+footer{
   background-color: blue;
+  width:1500px;
   height:0;
   right:0;
   left:0;
   overflow: hidden;
-  padding-bottom: 25%;
+  padding-bottom: 20%;
   margin:0 auto;
 }
-footer div .a .content{
+footer content{
   position:absolute;
   top:0;
   left:0;
@@ -936,123 +937,30 @@ footer div .a .content{
 }
 
 @media screen and (max-width:905px){
-  /* .middle .visual .inner{
-    width:100%;
-    height:558px;
-    
-  }
-  .middle .bg img{
-    height:560px;
-  }
-  .visual .fade-in .video video{
-    width:400px;
-    height:308px;
-    right:0;
-    top:240px;
-    position:absolute;
-    left:0;
-    margin:0 auto;
-    
-  }
-  .middle .visual .inner h2{
-    position:absolute;
-    left:0px;
-    right:0px;
-    margin: 0 auto;
-    top:20px;
-  } */
   .visual .fade-in .video video{
     width:380px;
     height:320px;
     right:20px;
     top:430px;
     position:absolute;
-    /* left:0; */
-    /* margin:0 auto; */
-    
   }
-  /* .middle .advantage .inner .solution__why{
-    text-align: center;
-    font-size: 25px;
-  } */
-  /* .middle .advantage .inner .first-adv {
-    display:block;
-  }
-  .middle .advantage .inner .first-adv .MBCA__why{
-    width:70%;
+  footer{
+    background-color: blue;
+    width:100%;
     height:0;
     right:0;
     left:0;
-    margin:0 auto;
     overflow: hidden;
-    padding-bottom: 45%;
+    padding-bottom: 35%;
+    margin:0 auto;
   }
-  .middle .advantage .inner .first-adv .MBCA__why .content{
+  footer content{
     position:absolute;
     top:0;
     left:0;
     width:100%;
     height:100%;
   }
-  .middle .advantage .inner .first-adv .MBCA__why__DESC{
-    word-break:break-all;
-    width:60%;
-  } */
-
-
-
-
-  /* .middle .advantage .inner .second-adv {
-    display:block;
-  }
-  .middle .advantage .inner .second-adv .MBCA__why{
-    width:70%;
-    height:0;
-    right:0;
-    left:0;
-    margin:0 auto;
-    overflow: hidden;
-    padding-bottom: 45%;
-  }
-  .middle .advantage .inner .second-adv .MBCA__why .content{
-    position:absolute;
-    top:0px;
-    left:0;
-    width:100%;
-    height:100%;
-  }
-  .middle .advantage .inner .second-adv .MBCA__why__DESC{
-    word-break:break-all;
-    width:60%;
-    
-  }
-
-
-
-
-  .middle .advantage .inner .third-adv {
-    display:block;
-  }
-  .middle .advantage .inner .third-adv .MBCA__why{
-    width:70%;
-    height:0;
-    right:0;
-    left:0;
-    margin:0 auto;
-    overflow: hidden;
-    padding-bottom: 45%;
-  }
-  .middle .advantage .inner .third-adv .MBCA__why .content{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-  }
-  .middle .advantage .inner .third-adv .MBCA__why__DESC{
-    word-break:break-all;
-    width:60%;
-  } */
 }
 @media screen and (max-width:768px){
   body{
@@ -1662,8 +1570,25 @@ footer div .a .content{
   }
   footer{
     position: relative;
-    top:150px;
+    top:100px;
     width: 100%;
+  }
+  footer{
+    background-color: blue;
+    width:100%;
+    height:0;
+    right:0;
+    left:0;
+    overflow: hidden;
+    padding-bottom: 40%;
+    margin:0 auto;
+  }
+  footer content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
   }
 }
 
