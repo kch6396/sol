@@ -1,4 +1,3 @@
-
 body {
   color: #333;
   font-size: 16px;
@@ -251,8 +250,8 @@ header .main__nav .nav .nav__name .solution{
   top:110px;
   width: 100%;
   height:400px;
-  background-color:rgb(69, 48, 138);
-  
+  /* background-color:rgb(69, 48, 138); */
+  height:100%;
 }
 /* .middle .bg{
   position:relative;
@@ -914,27 +913,21 @@ textarea {
 
 /* FOOTER */
 footer{
-  position:relative;
-  height:300px;
-  width:100%;
-  top:4237px;
+  position: relative;
+  top:250px;
+  width: 100%;
 }
 footer div .a{
   width:100%;
-  height:300px;
-  background-color: #ccc;
-}
-.vision .third .third__image{
   background-color: blue;
-  width:80%;
   height:0;
   right:0;
   left:0;
   overflow: hidden;
-  padding-bottom: 90%;
+  padding-bottom: 25%;
   margin:0 auto;
 }
-.vision .third .third__image .content{
+footer div .a .content{
   position:absolute;
   top:0;
   left:0;
@@ -1081,19 +1074,19 @@ footer div .a{
     transition-delay: 0s;
   }
   .show .back-to-position.delay-1{
-    transition-delay: 0s;
+    transition-delay: 0.1s;
   }
   .show .back-to-position.delay-2{
-    transition-delay: 0s;
+    transition-delay: 0.2s;
   }
   .show .back-to-position.delay-3{
-    transition-delay: 0s;
+    transition-delay: 0.3s;
   }
   .show .back-to-position.delay-4{
-    transition-delay: 0s;
+    transition-delay: 0.4s;
   }
   .show .back-to-position.delay-5{
-    transition-delay: 0s;
+    transition-delay: 0.5s;
   }
   header .logo img{
     position:absolute;
@@ -1667,7 +1660,11 @@ footer div .a{
     right:0;
     font-size: 4vw;
   }
-  
+  footer{
+    position: relative;
+    top:150px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:768px){
@@ -1679,7 +1676,8 @@ footer div .a{
   .middle{
     width:100%;
     top:54px;
-    height:236px;
+    /* height:236px; */
+    height:100%;
   }
   .middle .bg img{
     height:236px;
@@ -1784,6 +1782,7 @@ footer div .a{
   .middle{
     width:100%;
     top:54px;
-    height:366px;
+    /* height:366px; */
+    height:100%;
   }
 }
