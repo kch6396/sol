@@ -1,6 +1,29 @@
+const toggleBtn=document.querySelector('.nav__button');
+const menu= document.querySelector('.nav');
+const menu1= document.querySelector('.main__nav');
+toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menu1.classList.toggle('active');
+});
+
+const sol=document.querySelector('.solution');
+const twosol= document.querySelector('.solutions-nav');
+const twosol2=document.querySelector('#under');
+const twosol3=document.querySelector('.nav');
+sol.addEventListener('click', () =>{
+    twosol.classList.toggle('active');
+    twosol2.classList.toggle('active');
+    twosol3.classList.toggle('active2');
+});
+
+// // var content = document.getElementsByClassName('second__image')[0];
+// var content = document.getElementsByClassName('second__write')[0];
+// var parent = content.parentNode;
+// parent.insertBefore(content, parent.childNodes[2]);
+
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
-        center: new kakao.maps.LatLng(35.563442697386925,  129.32253853048218), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(35.56363334596394, 129.32526783531836), // 지도의 중심좌표
         level: 3, // 지도의 확대 레벨
         // scrollwheel:false
     };
@@ -31,7 +54,7 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);
 
 
-var iwContent = '<div style="padding:5px; width:96%;">FOBE<br><hr><p style="font-size:12px;">울산광역시 중구 종가로 406-21 <br>울산비즈파크 1033호</p><a href="https://map.kakao.com/link/map/FBOE,35.563442697386925,  129.32253853048218 " style="color:blue; font-size:13px;" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/FBOE,35.563442697386925,  129.32253853048218 " style="color:blue; font-size:13px;" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+var iwContent = '<div style="padding:5px; width:96%; color:rgb(69, 48, 138); font-weight:bold;">FOBE<br><hr><p style="font-size:12px;">울산광역시 중구 종가로 406-21 <br>울산비즈파크 1033호</p><a href="https://map.kakao.com/link/map/FBOE,35.563442697386925,  129.32253853048218 " style="color:blue; font-size:13px;" target="_blank">큰지도보기</a> <a href="https://map.kakao.com/link/to/FBOE,35.563442697386925,  129.32253853048218 " style="color:blue; font-size:13px;" target="_blank">길찾기</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
     iwRemoveable = true; // removeable 속성을 ture 로 설정하면 인포윈도우를 닫을 수 있는 x버튼이 표시됩니다
 
 // 인포윈도우를 생성합니다

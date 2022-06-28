@@ -24,26 +24,40 @@
       <a href="javascript:void(0)" class="logo">
         <img src="./images/FBOENAME.png" alt="FBOE" />
       </a>
+      
+      
       <div class="main__nav">
-        <ul class="nav">
+        
+        <div class="nav">
           <div class="nav__name"><a href="javascript:void(0)">Home</a></div>
-          <div class="nav__name" id="underline"><a class="solution" href="./mbca.html">Solutions</a>
+          
+          <div class="nav__name" id="under"><a class="solution" href="javascript:void(0)">Solutions</a>
+            
             <ul class="solutions-nav">
               <li><a href="./mbca.html">MBCA</a></li>
               <li><a href="./amc.html">AMC</a></li>
             </ul>
+            
           </div>
-          <div class="nav__name"><a href="javascript:void(0)">About us</a></div>
-          <div class="nav__name" id="underline"><a href="./contact.html" class="contactus">Contact us</a></div>
-        </ul>
+          <div class="nav__name" id="third"><a href="javascript:void(0)">About us</a></div>
+          <div class="nav__name" id="underline"><a class="contact" href="./contact.html">Contact us</a></div>
+        </div>
+        <!-- <a href="" class="nav__button">
+          <i class="fa-solid fa-bars"></i>
+        </a> -->
       </div>
+      <a href="javascript:void(0)" class="nav__button">
+        <!-- <span class="material-icons-outlined"> -->
+          <img src="./images/bar.png" alt="IMAGE1">
+          <!-- </span> -->
+      </a>
     </div>
   </header>
   <div class="middle">
     <div class="left scroll-spy">
       <img class="middle__bg" src="./images/BG.png" alt="">
       <div class="left__contact back-to-position to-up delay-0">
-        <h1>Contact us</h1>
+        <h1>Contact <br>us</h1>
         <div class="left__space"></div>
         <div class="pin back-to-position to-right delay-2">
           <img src="./images/pin.png" alt="">
@@ -65,34 +79,44 @@
           <form action="{% url 'users:meeting' %}" class="sign" method="post">
             <!-- {% csrf_token %} -->
             <div class="first">
-              <div>C o m p a n y<br>
+              <div class="company">C o m p a n y<br>
                 <label for="meeting"></label>
                 <input type="text" name="company" id="company" placeholder="Company">
               </div>
-              <div>I n d u s t r y<br>
+              <div class="industry">I n d u s t r y<br>
                 <label for="meeting"></label>
                 <input type="text" name="industry" id="industry" placeholder="Industry">
               </div>
             </div>
             <br>
-            N a m e
+            <!-- N a m e -->
             <div class="second">
-              <div>
+              <div class="firstname">N a m e<br>
+                <label for="meeting"></label>
+                <input type="text" name="company" id="company" placeholder="First Name"><br><div class="under-write"><div class="subname">First&nbsp; Name</div></div>
+              </div>
+              <div class="lastname"><br>
+                <label for="meeting"></label>
+                <input type="text" name="industry" id="industry" placeholder="Last Name"><br><div class="under-write"><div class="subname">Last&nbsp; Name</div></div>
+              </div>
+
+
+              <!-- <div>
                 <label for="meeting"></label>
                 <input type="text" name="firstname" id="firstname" placeholder="First Name"><br><div class="under-write"><div class="subname">First&nbsp; Name</div></div>
               </div>
               <div class="last">
                 <label for="meeting"></label>
                 <input type="text" name="lastname" id="lastname" placeholder="Last Name"><br><div class="under-write"><div class="subname">Last&nbsp; Name</div></div>
-              </div>
+              </div> -->
             </div>
             <br>
             <div class="third">
-              <div>J o b&nbsp;&nbsp;&nbsp;&nbsp;T i t l e<br>
+              <div class="job">J o b&nbsp;&nbsp;&nbsp;&nbsp;T i t l e<br>
                 <label for="meeting"></label>
                 <input type="text" name="jobtitle" id="jobtitle" placeholder="Job Title">
               </div>
-              <div>E m a i l<br>
+              <div class="email">E m a i l<br>
                 <label for="meeting"></label>
                 <input type="text" name="email" id="email" placeholder="Email">
               </div>
@@ -115,11 +139,20 @@
           <!-- <a href="{%url 'users:main' %}" ><button>돌아가기</button></a> -->
         </div>
       </div>
+      <!-- <div class="space2"></div> -->
       <div class="map scroll-spy">
         <div id="map" class="back-to-position to-left"></div>
         <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=271dc02bb1bbd6dd7061af973ceada79"></script>
       </div>
     </div>
   </div>
+  <!-- <footer>
+    <div class="inner">
+      <div class="content">
+
+      </div>
+    </div>
+  </footer>  -->
+
 </body>
 </html>
