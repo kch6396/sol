@@ -1,3 +1,9 @@
+html{
+  height: 100%;
+  border-bottom: 3px solid black;
+  overflow:hidden;
+}
+
 body {
   color: #333;
   font-size: 16px;
@@ -5,9 +11,12 @@ body {
   line-height:1.4;
   /* font-family: 'Nanum Gothic', sans-serif; */
   font-family: 'Secular One', sans-serif;
-  width:100%;
+  /* width:100%; */
+  min-height: 100%;
 }
-
+.wrap{
+  min-height: 100%;
+}
 img {
   display: block;
   /* height:50px; */
@@ -30,10 +39,10 @@ a{
   transition: 1s;
 }
 .back-to-position.to-right{
-  transform: translateX(-7vw);
+  transform: translateX(-5vw);
 }
 .back-to-position.to-left{
-  transform: translateX(7vw);
+  transform: translateX(5vw);
 }
 .back-to-position.to-up{
   transform: translateY(-150px);
@@ -276,7 +285,7 @@ header .main__nav .nav .nav__name .solution{
   height: 200px;
   font-size:50px;
   top:90px;
-  left:70px;
+  left:90px;
   /* padding-left:70px; */
   /* padding:20px 80px; */
   font-weight: bold;
@@ -286,13 +295,14 @@ header .main__nav .nav .nav__name .solution{
 
 .middle .inner .video video{
   position: absolute;
-  width:412px;
-  height:320px;
-  top:400px;
+  width:450px;
+  height:350px;
+  top:430px;
   bottom:0;
   margin:auto;
-  right:50px;
+  right:80px;
 }
+
 /* .visual .fade-in{
   opacity:0;
 } */
@@ -604,18 +614,16 @@ header .main__nav .nav .nav__name .solution{
 
 
 .vision__inner{
-  max-width: 1100px;
+  max-width: 1200px;
   left:0;
   right:0;
   margin:0 auto;
-  
 }
 .vision{
   display:flex;
   width:100%;
-  
 }
-.vision .first .first__image{
+/* .vision .first .first__image{
   background-color: #e5e5e5;
   background-color: blue;
   width:300px;
@@ -624,6 +632,8 @@ header .main__nav .nav .nav__name .solution{
   margin-right:50px;
   margin-left:50px;
 }
+
+
 .vision .first .first__write{
   font-size: 3vmin;
   text-align: center;
@@ -650,6 +660,91 @@ header .main__nav .nav .nav__name .solution{
   width:300px;
   height:350px;
   margin-top:30px;
+}
+.vision .third .third__write{
+  font-size: 3vmin;
+  text-align: center;
+  font-weight: bold;
+} */
+.vision .first{
+  /* position:absolute; */
+  width:30%;
+  margin:0 auto;
+}
+
+.vision .second{
+  /* position:absolute; */
+  width:30%;
+  display: flex;
+  flex-direction: column-reverse;
+  margin:0 auto;
+}
+.vision .third{
+  /* position:absolute; */
+  width:30%;
+  margin:0 auto;
+}
+.vision .first .first__image{
+  background-color: blue;
+  width:80%;
+  height:0;
+  right:0;
+  left:0;
+  overflow: hidden;
+  padding-bottom: 90%;
+  margin:0 auto;
+} 
+.vision .first .first__image .content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+.vision .second .second__image{
+  background-color: blue;
+  width:80%;
+  height:0;
+  right:0;
+  left:0;
+  overflow: hidden;
+  padding-bottom: 90%;
+  margin:0 auto;
+}
+.vision .second .second__image .content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.vision .third .third__image{
+  background-color: blue;
+  width:80%;
+  height:0;
+  right:0;
+  left:0;
+  overflow: hidden;
+  padding-bottom: 90%;
+  margin:0 auto;
+}
+.vision .third .third__image .content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+.vision .first .first__write{
+  font-size: 3vmin;
+  text-align: center;
+  font-weight: bold;
+}
+.vision .second .second__write{
+  font-size: 3vmin;
+  text-align: center;
+  font-weight: bold;
 }
 .vision .third .third__write{
   font-size: 3vmin;
@@ -828,7 +923,7 @@ textarea {
 
 /* FOOTER */
 footer{
-  position:absolute;
+  position:relative;
   height:300px;
   width:100%;
   top:4237px;
@@ -838,7 +933,25 @@ footer div .a{
   height:300px;
   background-color: #ccc;
 }
-@media screen and (max-width:820px){
+.vision .third .third__image{
+  background-color: blue;
+  width:80%;
+  height:0;
+  right:0;
+  left:0;
+  overflow: hidden;
+  padding-bottom: 90%;
+  margin:0 auto;
+}
+.vision .third .third__image .content{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
+
+@media screen and (max-width:905px){
   /* .middle .visual .inner{
     width:100%;
     height:558px;
@@ -868,7 +981,7 @@ footer div .a{
     width:380px;
     height:320px;
     right:20px;
-    top:400px;
+    top:430px;
     position:absolute;
     /* left:0; */
     /* margin:0 auto; */
@@ -972,6 +1085,25 @@ footer div .a{
     width:100%;
     height:50px;
   }
+
+  .show .back-to-position.delay-0{
+    transition-delay: 0s;
+  }
+  .show .back-to-position.delay-1{
+    transition-delay: 0s;
+  }
+  .show .back-to-position.delay-2{
+    transition-delay: 0s;
+  }
+  .show .back-to-position.delay-3{
+    transition-delay: 0s;
+  }
+  .show .back-to-position.delay-4{
+    transition-delay: 0s;
+  }
+  .show .back-to-position.delay-5{
+    transition-delay: 0s;
+  }
   header .logo img{
     position:absolute;
     height:30px;
@@ -1015,14 +1147,14 @@ footer div .a{
     margin: 0 auto;
     top:40px;
   } */
-  .middle .visual .inner{
+  /* .middle .visual .inner{
     width:100%;
     height:365px;
     
   }
   .middle .bg img{
     height:366px;
-  }
+  } */
 
   
   /* .visual .fade-in .video video {
@@ -1034,14 +1166,14 @@ footer div .a{
     left: 0;
     margin: 0 auto;
 } */
-  .middle .visual .inner h2{
+  /* .middle .visual .inner h2{
     position:absolute;
     left:0px;
     right:-50px;
     margin: 0 auto;
     top:10px;
     font-size:35px;
-  }
+  } */
 
   /* .middle .inner .video{
     position: absolute;
@@ -1050,7 +1182,7 @@ footer div .a{
     margin:auto;
     padding:auto;
   } */
-  .visual .fade-in .video video{
+  /* .visual .fade-in .video video{
     position: absolute;
     width: 258px;
     max-width: 100%;
@@ -1061,7 +1193,7 @@ footer div .a{
     bottom: 0;
     
     
-  }
+  } */
   .choice .inner{
     width:100%;
   }
@@ -1069,11 +1201,11 @@ footer div .a{
     width:100%;
     margin:0 0;
   }
-  .middle{
+  /* .middle{
     width:100%;
     top:54px;
     height:366px;
-  }
+  } */
 
   header .nav{
     /* display:none; */
@@ -1351,12 +1483,12 @@ footer div .a{
     text-align: center;
     font-size: 5vw;
   }
-  .vision .first .first__image{
+  /* .vision .first .first__image{
     width:60%;
     left:0;
     right:0;
     margin:15px auto;
-  }
+  } */
   .vision .first .first__write{
     width:60%;
     left:0;
@@ -1365,12 +1497,12 @@ footer div .a{
     margin-bottom: 35px;
     font-size: 4vw;
   }
-  .vision .second .second__image{
+  /* .vision .second .second__image{
     width:60%;
     left:0;
     right:0;
     margin:15px auto;
-  }
+  } */
   .vision .second .second__write{
     width:60%;
     left:0;
@@ -1379,12 +1511,12 @@ footer div .a{
     margin-bottom: 35px;
     font-size: 4vw;
   }
-  .vision .third .third__image{
+  /* .vision .third .third__image{
     width:60%;
     left:0;
     right:0;
     margin:15px auto;
-  }
+  } */
   .vision .third .third__write{
     width:60%;
     left:0;
@@ -1394,7 +1526,76 @@ footer div .a{
     font-size: 4vw;
   }
 
-
+  .vision .first{
+    /* position:absolute; */
+    width:50%;
+    margin:0 auto;
+  }
+  
+  .vision .second{
+    /* position:absolute; */
+    width:50%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin:0 auto;
+  }
+  .vision .third{
+    /* position:absolute; */
+    width:50%;
+    margin:0 auto;
+  }
+  .vision .first .first__image{
+    background-color: blue;
+    width:80%;
+    height:0;
+    right:0;
+    left:0;
+    overflow: hidden;
+    padding-bottom: 90%;
+    margin:0 auto;
+  } 
+  .vision .first .first__image .content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  
+  .vision .second .second__image{
+    background-color: blue;
+    width:80%;
+    height:0;
+    right:0;
+    left:0;
+    overflow: hidden;
+    padding-bottom: 90%;
+    margin:0 auto;
+  }
+  .vision .second .second__image .content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+  .vision .third .third__image{
+    background-color: blue;
+    width:80%;
+    height:0;
+    right:0;
+    left:0;
+    overflow: hidden;
+    padding-bottom: 90%;
+    margin:0 auto;
+  }
+  .vision .third .third__image .content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
 
 
 
@@ -1526,7 +1727,7 @@ footer div .a{
     height: auto;
     inset: 100px 0px 0px;
     /* margin: auto; */
-    top: 230px;
+    top: 260px;
     bottom: 0;
     right:-260px;
     

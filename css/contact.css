@@ -1,3 +1,6 @@
+html{
+  height:100%;
+}
 body {
   color: #333;
   font-size: 16px;
@@ -249,7 +252,6 @@ header .main__nav .nav .nav__name .contactus{
   position: relative;
   width: 100%;
   height:100%;
-  top:114px;
   display: flex;
 }
 .middle__bg{
@@ -262,6 +264,7 @@ header .main__nav .nav .nav__name .contactus{
   position: fixed;
   width:45%;
   height:100%;
+  top:114px;
 }
 .middle .left .left__contact{
   position: absolute;
@@ -317,7 +320,7 @@ header .main__nav .nav .nav__name .contactus{
   position: absolute;
   right:0;
   width:65%;
-  height:855px;
+  height:100vh;
 }
 .middle .right .map{
   position:relative;
@@ -333,15 +336,17 @@ header .main__nav .nav .nav__name .contactus{
   left:0;
   right:0;
   margin:auto;
+  top:114px;
 }
 .middle .right .table{
   width:100%;
   height:100%;
   position: relative;
+  
 }
 .middle .right .table .container{
   width:70%;
-  height:60%;
+  height:50%;
   position:absolute;
   top:0;
   bottom:0;
@@ -352,6 +357,7 @@ header .main__nav .nav .nav__name .contactus{
   color:rgb(69, 48, 138);
   font-weight: bold;
   font-size:20px;
+  top:114px;
 }
 
 .middle .right .table .container form input{
