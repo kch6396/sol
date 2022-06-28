@@ -509,6 +509,9 @@ footer .inner content{
   body{
     width:100%;
   }
+  html, body{
+    height:200%;
+  }
   .inner{
     width:100%;
   }
@@ -790,7 +793,7 @@ footer .inner content{
     top:100px;
   }
   .middle .right .table .container form .bt input{
-    padding:10px 35px;
+    /* padding:10px 35px; */
     /* font-size:2vmin; */
     font-size:12px;
     /* width:50px; */
