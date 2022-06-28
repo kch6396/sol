@@ -699,6 +699,7 @@ footer .inner content{
     white-space: nowrap;
     font-weight: bold;
     font-size:13px;
+    white-space: normal;
   }
   .middle .left .left__contact .phone{
     display:flex;
