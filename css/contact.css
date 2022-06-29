@@ -525,7 +525,7 @@ footer .inner content{
     height:50px;
   }
 
-  /* .show .back-to-position.delay-0{
+  .show .back-to-position.delay-0{
     transition-delay: 0s;
   }
   .show .back-to-position.delay-1{
@@ -542,7 +542,7 @@ footer .inner content{
   }
   .show .back-to-position.delay-5{
     transition-delay: 0.5s;
-  } */
+  }
   header .logo img{
     position:absolute;
     height:30px;
@@ -673,7 +673,7 @@ footer .inner content{
   }
   .middle .left .left__contact{
     position: relative;
-    width:50%;
+    width:100%;
     height:auto;
     left:0;
     right:0;
@@ -712,17 +712,16 @@ footer .inner content{
   }
   .middle .left .left__contact .phone img{
     margin: 0 5px 10px 5px;
-    height:5%;
-    width:7%;
+    height:2%;
+    width:3%;
   }
   .middle .left .left__contact .pin{
     display: flex;
   }
   .middle .left .left__contact .pin img{
-    height:25px;
     margin: 0 5px 10px 5px;
-    height:5%;
-    width:7%;
+    height:2%;
+    width:3%;
   }
   
   .middle .right{
