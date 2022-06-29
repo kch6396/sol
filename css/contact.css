@@ -680,7 +680,7 @@ footer .inner content{
     top:70px;
     bottom:0;
     margin:auto;
-    /* margin-left:0; */
+    margin-left:20px;
   }
   .middle .left .left__contact .br_1{
     display: none;
