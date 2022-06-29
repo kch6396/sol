@@ -484,6 +484,7 @@ textarea::placeholder {
   color:white;
   border:2px solid rgb(69, 48, 138);
   background-color: rgb(69, 48, 138);
+  border-radius: 20px;
 }
 /* FOOTER */
 /* footer{
@@ -825,5 +826,6 @@ footer .inner content{
   .middle .right .table .container form .bt input:hover{
     width:130px;
     height:41px;
+    border-radius: 20px;
   }
 }
